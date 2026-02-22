@@ -1,0 +1,15 @@
+﻿global using Azure.Data.Tables;
+global using Azure.Storage.Blobs;
+global using Azure.Storage.Blobs.Models;
+global using AzureFuncs.ForexBigDataProcessingFunctions.Models;
+global using AzureFuncs.ForexBigDataProcessingFunctions.Providers;
+global using AzureFuncs.ForexBigDataProcessingFunctions.Services;
+global using Microsoft.Azure.Functions.Worker;
+global using Microsoft.Azure.Functions.Worker.Http;
+global using Microsoft.DurableTask;
+global using Microsoft.DurableTask.Client;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Hosting;
+global using Microsoft.Extensions.Logging;
+global using System.Text.Json;
+global using System.Text.Json.Serialization;

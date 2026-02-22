@@ -1,0 +1,13 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+# This file is used to test the Forex Big Data Processing Orchestrator Function
+# The function is triggered by an HTTP request and processes the Forex Exchange Rate Data
+# This request is used to trigger the function and process the Forex Exchange Rate Data
+###
+
+@hostname=localhost
+@port=7287
+@host={{hostname}}:{{port}}
+
+GET http://{{host}}/api/ForexBigDataProcessingOrchestratorFunction_HttpStart?path=forex&subPath=exchangeratedata
+
+###

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A77989AE-7C80-493B-83EF-D509F56D27B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{9325A2E5-B2A5-4DA0-91A0-F40341B7AED9}"
+	ProjectSection(SolutionItems) = preProject
+		infra\mktg-showcase-forex-bigdata-processing-dev-deployment-scripts.ps1 = infra\mktg-showcase-forex-bigdata-processing-dev-deployment-scripts.ps1
+		infra\mktg-showcase-forex-bigdata-processing-main-dev.bicepparam = infra\mktg-showcase-forex-bigdata-processing-main-dev.bicepparam
+		infra\mktg-showcase-forex-bigdata-processing-main.bicep = infra\mktg-showcase-forex-bigdata-processing-main.bicep
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{F48ACE8A-B467-4C76-B83C-6F7F7CFCBC43}"
+	ProjectSection(SolutionItems) = preProject
+		deploy\build.yaml = deploy\build.yaml
+		deploy\pipeline.yaml = deploy\pipeline.yaml
+		deploy\release.yaml = deploy\release.yaml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFuncs.ForexBigDataProcessingFunctions", "src\AzureFuncs.ForexBigDataProcessingFunctions\AzureFuncs.ForexBigDataProcessingFunctions.csproj", "{F3FBB675-6016-4C44-BB8C-0CBA9326FDFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{BEE49037-2411-40C0-8D75-678D67DBFEBF}"
+	ProjectSection(SolutionItems) = preProject
+		doc\README.md = doc\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{64CCE77F-3B59-4FA7-8F78-2AE9900F3A7F}"
+	ProjectSection(SolutionItems) = preProject
+		infra\templates\blob-services.bicep = infra\templates\blob-services.bicep
+		infra\templates\function-app-settings.bicep = infra\templates\function-app-settings.bicep
+		infra\templates\function-app.bicep = infra\templates\function-app.bicep
+		infra\templates\hosting-plan.bicep = infra\templates\hosting-plan.bicep
+		infra\templates\storage-account.bicep = infra\templates\storage-account.bicep
+		infra\templates\storage-accounts-role-assignments.bicep = infra\templates\storage-accounts-role-assignments.bicep
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3FBB675-6016-4C44-BB8C-0CBA9326FDFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3FBB675-6016-4C44-BB8C-0CBA9326FDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3FBB675-6016-4C44-BB8C-0CBA9326FDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3FBB675-6016-4C44-BB8C-0CBA9326FDFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F3FBB675-6016-4C44-BB8C-0CBA9326FDFA} = {A77989AE-7C80-493B-83EF-D509F56D27B0}
+		{64CCE77F-3B59-4FA7-8F78-2AE9900F3A7F} = {9325A2E5-B2A5-4DA0-91A0-F40341B7AED9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3DF2715-E1D8-4CFE-B9E2-821E7B7C3AD0}
+	EndGlobalSection
+EndGlobal
